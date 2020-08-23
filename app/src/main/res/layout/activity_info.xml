@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".infoActivity">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="360dp"
+        android:layout_height="584dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="20dp"
+        android:text="      To use this app you must provide 11 chemical properties of your wine (12 for the import data section). This app works more like a fast minimalistic service than an usual app, we provide on spot quality
+analysis of your wine and tell you based on a range from 3 to 9 how good is your wine and based on that estimation
+how much you can sell your wine on the market. Our artificial taster is based on the data from Portugal
+the place where the finest wines are made.\n        Chemical tests always give a recommended interval for your wine
+but let's don't forget about the sensory testing (wine tasting) where a professional tastes your wine. Human bias
+is common nowadays but what if you could have an artificial taster who will always taste your wine correctly?
+\n          For this service to give you the best predictions you must provide 11 chemical data of your wine:\n\n
+    1. Fixed acidity (values between 3.8 and 14.2 g/l)\n
+    2. Volatile acidity(between 0 and 2 g/l)\n
+    3. Citric acid (between 0 and 2 g/l)\n
+    4. Residual sugar (between 0 and 150 g/l)\n
+    5. Chlorides (between 0 and 2 g/l)\n
+    6. Free sulfur dioxide(between 0 and 200 g/l)\n
+    7. Total sulfur dioxide(between 0 and 500 g/l)\n
+    8. Density (must be close to 0.99-1 g/cm^3)\n
+    9. pH (between 2.5 and 4)\n
+    10. Sulphates (between 0 and 1.5)\n
+    11. Alcohol(between 8% and 15%)"
+        android:textColor="#673AB7"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="90dp"
+        android:backgroundTint="#673AB7"
+        android:text="Give it a try"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="test_wine"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
